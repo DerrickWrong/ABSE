@@ -4,9 +4,9 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
-group = 'com.example'
+group = 'com.mit.abse'
 version = '0.0.1-SNAPSHOT'
-description = 'Demo project for Spring Boot'
+description = 'Derrick Huang SDM Thesis on Agent-Based Systems Engineer'
 
 java {
 	toolchain {
@@ -30,3 +30,10 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+jar {
+	manifest {
+		attributes 'ABSE-Plugin' : 'com.mit.abse.Test'
+	}
+}
+
