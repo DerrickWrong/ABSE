@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+	id="com.nomagic.magicdraw.plugins.impl.sysml"
+	licenseId="SysML"
+	name="SysML"
+	version="2024x"
+	internalVersion="202400000"
+	ownClassloader="false"
+	class-lookup="GlobalFirst"
+	provider-name="No Magic"
+	class="com.nomagic.magicdraw.sysml.SysMLPlugin">
+
+	<requires>
+		<api version="1.0"/>
+	    
+		<required-plugin id="com.nomagic.requirements" name="Cameo Requirements Modeler" version="2024x" internalVersion="202400000"/>
+		<required-plugin id="com.nomagic.magicdraw.informationflows" name="Information Flows Management" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.fileattachments" name="File Attachments" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.migrationframework" name="Model migration framework" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.ganttchartdiagram" name="Gantt Chart Diagram" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.imagelibrary" name="Image Library" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.diagramtable" name="Diagram Table" version="2024x"/>
+		<required-plugin id="DependencyMatrixPlugin" name="Dependency Matrix" version="2024x"/>
+		<required-plugin id="com.nomagic.magicdraw.dialogtable" name="Dialog Table" version="2024x"/>
+
+	</requires>
+
+	<runtime>
+		<library name="lib/antlr-runtime-3.5.jar"/>
+		<library name="lib/antlr4-annotations-4.9.0.jar"/>
+		<library name="lib/antlr4-runtime-4.9.jar"/>
+		<library name="lib/fmu-wrapper-2.26.5.jar"/>
+		<library name="lib/java-cup-11b-20160615.jar"/>
+		<library name="lib/jna-4.1.0.jar"/>
+		<library name="lib/simple-xml-safe-2.7.1.jar"/>
+		<library name="sysml.jar"/>
+		<library name="sysml_api.jar"/>
+	
+	</runtime>
+
+
+
+</plugin>
